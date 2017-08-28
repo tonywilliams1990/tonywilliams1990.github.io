@@ -1,0 +1,169 @@
+<!DOCTYPE HTML>
+<!--
+	Strongly Typed by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Anthony Williams</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+    <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+    </script>
+    <script type="text/javascript" async
+    src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_CHTML">
+    </script>
+	</head>
+	<body class="homepage">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<div id="header-wrapper">
+					<div id="header" class="container">
+
+						<!-- Logo -->
+							<h1 id="logo"><a href="boundary_layer.html">Boundary-layer equations</a></h1>
+
+						<!-- Nav -->
+							<nav id="nav">
+								<ul>
+									<li><a class="icon fa-home" href="index.html"><span>Home</span></a></li>
+									<li>
+										<a href="publications.html" class="icon fa-book"><span>Publications</span></a>
+										<ul>
+											<li><a href="#">None so far</a></li>
+										</ul>
+									</li>
+									<li><a class="icon fa-cog" href="code.html"><span>Code</span></a></li>
+									<li><a class="icon fa-align-center" href="./documents/CV.pdf"><span>CV</span></a></li>
+                  <li><a class="icon fa-envelope-o" href="index.html#footer"><span>Contact</span></a></li>
+								</ul>
+							</nav>
+
+					</div>
+				</div>
+
+			<!-- Main -->
+			<div id="main-wrapper">
+				<div id="main" class="container">
+					<div class="row">
+
+					<!-- Content -->
+					<div id="content" class="12u 12u(mobile)">
+          <p>
+          The idea of a boundary layer first appeared from an analysis of a problem in fluid mechanics, namely the flow of a viscous fluid past a rigid body. The flow of a fluid is described by the Navier-Stokes equations which express the conservation of mass and momentum of each fluid element during its motion. In general however the Navier-Stokes equations are very difficult to solve for a given flow configuration, it is therefore necessary to make certain simplifying assumptions.
+          </p>
+          <p>
+The concept of the boundary layer, first described by <a href="https://ntrs.nasa.gov/search.jsp?R=19930090813" target="_blank">Ludwig Prandtl in 1904</a>, simplifies the equations governing viscous fluid flow. The flow over a body can be split into two regions: a thin boundary layer close to the surface, where viscous forces are important, and an inviscid flow outside the boundary layer where these forces are insignificant. The outer inviscid flow creates the boundary conditions at the upper edge of the boundary layer and controls the velocity profile within the layer. In contrast the boundary layer is so small that it is effectively invisible to the outer flow and as such has virtually no leading order effect on the inviscid flow so long as there is no flow separation. 
+          </p>
+          <p>
+The Navier-Stokes equations describe the motion of a fluid in $\mathbb{R}^n$ ($n=2$ or $3$). These equations are solved for an unknown velocity vector $\mathbf{u}(\mathbf{x},t) \in \mathbb{R}^n$ and pressure $p(\mathbf{x},t) \in \mathbb{R}$ as functions of position $\mathbf{x} \in \mathbb{R}^n$ and time $t \geq 0$. Here we shall only consider steady incompressible fluids without body forces such that the Navier-Stokes equations are given by
+
+
+$$\nabla \cdot \mathbf{u} = 0,$$
+
+$$\left(\mathbf{u} \cdot \nabla \right) \mathbf{u} = -\frac{1}{\rho} \nabla p + \nu \nabla^2 \mathbf{u}, $$
+
+with $\mathbf{u}=\mathbf{u}(\mathbf{x})$. Here $\nu$ is the kinematic viscosity of the fluid at a point and $\rho$ is the density of the fluid, both $\nu$ and $\rho$ are taken to be constant.
+          </p>
+          <p>
+Writing the Navier-Stokes equations in index notation, using the summation convention, we have 
+
+$$\frac{\partial u_i}{\partial x_i} = 0,$$
+
+$$ u_j \frac{\partial u_i}{\partial x_j} = -\frac{1}{\rho} \frac{\partial p}{\partial x_i} + \nu \frac{\partial^2 u_i}{\partial x_j \partial x_j}. $$
+
+Now suppose that we rescale the spatial coordinates such that $x_i = L \hat{x}_i$ where $L$ is a characteristic length scale and $\hat{x}_i = O(1)$. Let us also rescale the velocity components and the pressure such that $u_i = U_{\infty} \hat{u}_i$ and $p=\rho U_{\infty}^2 \hat{p}$ where $U_{\infty}$ is the free-stream velocity and $\hat{u}_i = \hat{p} = O(1)$ then we have
+ 
+$$\frac{U_{\infty}}{L}\frac{\partial \hat{u}_i}{\partial \hat{x}_i} = 0,$$
+
+$$\frac{U_{\infty}^2}{L} \hat{u}_j \frac{\partial \hat{u}_i}{\partial \hat{x}_j} = -\frac{\rho U_{\infty}^2}{\rho L} \frac{\partial \hat{p}}{\partial \hat{x}_i} + \frac{\nu U_{\infty}}{L^2} \frac{\partial^2 \hat{u}_i}{\partial \hat{x}_j \partial \hat{x}_j}.$$
+
+Defining the Reynolds number for the flow $\textit{Re} = U_{\infty} L / \nu$ and dividing through we have
+
+$$\frac{\partial \hat{u}_i}{\partial \hat{x}_i} = 0,$$
+
+$$\hat{u}_j \frac{\partial \hat{u}_i}{\partial \hat{x}_j} = -\frac{\partial \hat{p}}{\partial \hat{x}_i} + \frac{1}{\textit{Re}} \frac{\partial^2 \hat{u}_i}{\partial \hat{x}_j \partial \hat{x}_j}.$$
+
+These are the non-dimensional Navier-Stokes equations governing the steady flow of an incompressible fluid.
+          </p>
+          <h3>Asymptotic expansion</h3>
+          <p>
+In order to obtain asymptotic expansions for the solutions of the Navier-Stokes equations for large Reynolds numbers we propose the singular perturbation problem 
+
+$$\frac{\partial \hat{u}_i}{\partial \hat{x}_i} = 0,$$
+
+$$\hat{u}_j \frac{\partial \hat{u}_i}{\partial \hat{x}_j} = -\frac{\partial \hat{p}}{\partial \hat{x}_i} + \epsilon^2 \frac{\partial^2 \hat{u}_i}{\partial \hat{x}_j \partial \hat{x}_j},$$
+
+where $\epsilon = \textit{Re}^{-1/2}$ is the perturbation parameter. The asymptotic expansion will be split into an outer and inner expansion which must be matched in the overlapping region. The outer expansion will govern the outer flow, far from the boundary, and the inner expansion will govern the thin region next to the boundary in which there is a large change in the velocity; this is the "boundary layer".
+          </p>
+          <p>
+From here on in we shall use the non-dimensional Cartesian coordinates $\hat{x}_i = (x,y,z)$ and the velocity components $\hat{u}_i = (u,v,w)$. We shall use the following asymptotic expansions for the solutions of the Navier-Stokes equations in the outer flow 
+
+$$ u(x,y,z) = U_0(x,y,z)+ \epsilon U_1(x,y,z) + \epsilon^2 U_2(x,y,z) + \ldots $$
+$$ v(x,y,z) = V_0(x,y,z)+ \epsilon V_1(x,y,z) + \epsilon^2 V_2(x,y,z) + \ldots $$
+$$ w(x,y,z) = W_0(x,y,z)+ \epsilon W_1(x,y,z) + \epsilon^2 W_2(x,y,z) + \ldots $$
+$$ p(x,y,z) = P_0(x,y,z)+ \epsilon P_1(x,y,z) + \epsilon^2 P_2(x,y,z) + \ldots. $$
+
+Substituting into the governing equations we find that to leading order we have
+
+$$ \frac{\partial U_0}{\partial x} + \frac{\partial V_0}{\partial y} + \frac{\partial W_0}{\partial z} = 0, $$
+$$ U_0 \frac{ \partial U_0}{ \partial x} + V_0 \frac{\partial U_0}{\partial y} + W_0 \frac{\partial U_0}{\partial z} = - \frac{\partial P_0}{\partial x}, $$
+$$ U_0 \frac{\partial V_0}{\partial x} + V_0 \frac{\partial V_0}{\partial y} + W_0 \frac{\partial V_0}{\partial z} = - \frac{\partial P_0}{\partial y}, $$
+$$ U_0 \frac{\partial W_0}{\partial x} + V_0 \frac{\partial W_0}{\partial y} + W_0 \frac{\partial W_0}{\partial z} = - \frac{\partial P_0}{\partial z}. $$ 
+
+These Euler equations governing the inviscid outer flow  are not valid close to the boundary as in general solutions to these equations do not satisfy the required no-slip condition. We therefore seek an alternate solution in the thin region next to the boundary.
+          </p>
+          <p>
+The solution close to the boundary wall requires an alternative approach, we introduce the stretched coordinates $Y = y/ \epsilon$ and $Z = z/ \epsilon$ and the asymptotic expansions
+
+$$u(x,y,z) = u_0(x,Y,Z)+ \epsilon u_1(x,Y,Z) + \epsilon^2 u_2(x,Y,Z) + \ldots $$
+$$v(x,y,z) = \epsilon v_0(x,Y,Z)+ \epsilon^2 v_1(x,Y,Z) + \epsilon^3 v_2(x,Y,Z) + \ldots $$
+$$w(x,y,z) = \epsilon w_0(x,Y,Z)+ \epsilon^2 w_1(x,Y,Z) + \epsilon^3 w_2(x,Y,Z) + \ldots $$
+$$p(x,y,z) = p_0(x,Y,Z)+ \epsilon p_1(x,Y,Z) + \epsilon^2 p_2(x,Y,Z) + \ldots $$
+
+Rescaling the governing equations using the stretched coordinates $Y$ and $Z$ we have
+
+$$ \epsilon \frac{\partial u}{\partial x} + \frac{\partial v}{\partial Y} + \frac{\partial w}{\partial Z} = 0 $$
+$$ \epsilon u \frac{\partial u}{\partial x} + v \frac{\partial u}{\partial Y} + w \frac{\partial u}{\partial Z} = -\epsilon \frac{\partial p}{\partial x} + \epsilon^3 \frac{\partial^2 u}{\partial x^2} + \epsilon \frac{\partial ^2 u}{\partial Y^2} + \epsilon \frac{\partial^2 u}{\partial Z^2}, $$
+$$ \epsilon u \frac{\partial v}{\partial x} + v \frac{\partial v}{\partial Y} + w \frac{\partial v}{\partial Z} = -\epsilon \frac{\partial p}{\partial Y} + \epsilon^3 \frac{\partial^2 v}{\partial x^2} + \epsilon \frac{\partial ^2 v}{\partial Y^2} + \epsilon \frac{\partial^2 v}{\partial Z^2}, $$
+$$ \epsilon u \frac{\partial w}{\partial x} + v \frac{\partial w}{\partial Y} + w \frac{\partial w}{\partial Z} = -\epsilon \frac{\partial p}{\partial Z} + \epsilon^3 \frac{\partial^2 w}{\partial x^2} + \epsilon \frac{\partial ^2 w}{\partial Y^2} + \epsilon \frac{\partial^2 w}{\partial Z^2}. $$
+
+Substituting the asymptotic expansions into the above rescaled equations we obtain to leading order
+
+$$ \frac{\partial u_0}{\partial x} + \frac{\partial v_0}{\partial Y} + \frac{\partial w_0}{\partial Z} = 0, $$
+$$ u_0 \frac{\partial u_0}{\partial x} + v_0 \frac{\partial u_0}{\partial Y} + w_0 \frac{\partial u_0}{\partial Z} = -\frac{\partial p_0}{\partial x} + \frac{\partial^2 u_0}{\partial Y^2} + \frac{\partial^2 u_0}{\partial Z^2}, $$
+$$ u_0 \frac{\partial v_0}{\partial x} + v_0 \frac{\partial v_0}{\partial Y} + w_0 \frac{\partial v_0}{\partial Z} = - \frac{\partial p_2}{\partial Y} + \frac{\partial^2 v_0}{\partial Y^2} + \frac{\partial^2 v_0}{\partial Z^2}, $$
+$$ u_0 \frac{\partial w_0}{\partial x} + v_0 \frac{\partial w_0}{\partial Y} + w_0 \frac{\partial w_0}{\partial Z} = - \frac{\partial p_2}{\partial Z} + \frac{\partial^2 w_0}{\partial Y^2} + \frac{\partial^2 w_0}{\partial Z^2}. $$
+
+
+It is worth noting that $p_1$ has no impact on the boundary-layer equations but $p_2$ does. The presence of the $p_2$ terms indicates the possible impact of short scale variations on the leading order boundary-layer equations. In two-dimensional boundary layers the transverse momentum equation becomes an equation for $p_2$ which is decoupled from the rest of the equations however in the three-dimensional case this is not so and role of the $p_2$ terms is more complicated. 
+          </p>
+          <p>
+The equations governing the outer inviscid flow and the inner boundary layer flow govern the leading order terms in asymptotic expansions. In principle we could continue this process and determine the equations governing the terms at subsequent orders. For large Reynolds numbers however we have sufficient accuracy to gain an understanding of the flow characteristics without including higher order corrections. We shall demonstrate the utility of the boundary layer equations by examining the boundary layer on a semi-infinite flat plate. 
+          </p>
+
+          
+                  
+          </div>
+          
+				</div>
+			</div>
+		</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/skel-viewport.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
