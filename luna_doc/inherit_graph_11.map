@@ -1,0 +1,13 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$classLuna_1_1Residual.html" title="Luna::Residual\&lt; double \&gt;" alt="" coords="5,173,176,199"/>
+<area shape="rect" id="node2" href="$classLuna_1_1Example_1_1Arc__problem.html" title="Luna::Example::Arc\l_problem" alt="" coords="243,5,381,47"/>
+<area shape="rect" id="node3" href="$classLuna_1_1Example_1_1free__BC.html" title="Luna::Example::free_BC" alt="" coords="229,71,395,98"/>
+<area shape="rect" id="node4" href="$classLuna_1_1Example_1_1left__BC.html" title="Luna::Example::left_BC" alt="" coords="231,122,393,149"/>
+<area shape="rect" id="node5" href="$classLuna_1_1Example_1_1plate__BC.html" title="Luna::Example::plate_BC" alt="" coords="227,173,397,199"/>
+<area shape="rect" id="node6" href="$classLuna_1_1Example_1_1right__BC.html" title="Luna::Example::right_BC" alt="" coords="228,223,396,250"/>
+<area shape="rect" id="node7" href="$classLuna_1_1Example_1_1test__residual.html" title="Luna::Example::test\l_residual" alt="" coords="243,275,381,316"/>
+<area shape="rect" id="node8" href="$classLuna_1_1Residual__with__coords.html" title="Luna::Residual_with\l_coords\&lt; double, double \&gt;" alt="" coords="224,340,400,381"/>
+<area shape="rect" id="node9" href="$classLuna_1_1Equation__1matrix.html" title="Luna::Equation_1matrix\l\&lt; double \&gt;" alt="" coords="448,340,607,381"/>
+<area shape="rect" id="node10" href="$classLuna_1_1Example_1_1nonlinear__equation.html" title="Luna::Example::nonlinear\l_equation" alt="" coords="655,307,824,348"/>
+<area shape="rect" id="node11" href="$classLuna_1_1Example_1_1test__equation.html" title="Luna::Example::test\l_equation" alt="" coords="670,372,809,413"/>
+</map>

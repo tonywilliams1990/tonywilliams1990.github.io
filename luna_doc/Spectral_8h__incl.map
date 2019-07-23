@@ -1,0 +1,9 @@
+<map id="include/Luna/Spectral.h" name="include/Luna/Spectral.h">
+<area shape="rect" id="node5" href="$Vector_8h.html" title="A templated numeric Vector class that encapsulates std::vector. " alt="" coords="577,379,647,405"/>
+<area shape="rect" id="node15" href="$Error_8h.html" title="Defines a class for simple error handling. " alt="" coords="1245,453,1307,480"/>
+<area shape="rect" id="node17" href="$Chebyshev_8h.html" title="A class specifying Chebyshev basis functions to be used in spectral methods. " alt="" coords="797,155,896,181"/>
+<area shape="rect" id="node22" href="$Special_8h.html" title="A file specifying some special mathematical functions not contained in the standard library..." alt="" coords="403,304,479,331"/>
+<area shape="rect" id="node24" href="$RationalSemi_8h.html" title="A class specifying Rational Chebyshev basis functions on a semi&#45;infinite interval to be used in spect..." alt="" coords="607,80,718,107"/>
+<area shape="rect" id="node18" href="$Matrix_8h.html" title="A templated matrix class which constructs a Matrix as an std::vector of Vectors. " alt="" coords="827,304,896,331"/>
+<area shape="rect" id="node21" href="$Basis_8h.html" title="A base class to be inherited by classes specifying basis functions to be used in spectral methods..." alt="" coords="884,229,951,256"/>
+</map>

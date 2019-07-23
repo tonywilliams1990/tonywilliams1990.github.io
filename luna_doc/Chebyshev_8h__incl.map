@@ -1,0 +1,7 @@
+<map id="include/Luna/Chebyshev.h" name="include/Luna/Chebyshev.h">
+<area shape="rect" id="node4" href="$Matrix_8h.html" title="A templated matrix class which constructs a Matrix as an std::vector of Vectors. " alt="" coords="812,155,881,181"/>
+<area shape="rect" id="node11" href="$Error_8h.html" title="Defines a class for simple error handling. " alt="" coords="1145,304,1207,331"/>
+<area shape="rect" id="node13" href="$Vector_8h.html" title="A templated numeric Vector class that encapsulates std::vector. " alt="" coords="535,229,606,256"/>
+<area shape="rect" id="node20" href="$Basis_8h.html" title="A base class to be inherited by classes specifying basis functions to be used in spectral methods..." alt="" coords="983,80,1049,107"/>
+<area shape="rect" id="node21" href="$Special_8h.html" title="A file specifying some special mathematical functions not contained in the standard library..." alt="" coords="471,155,547,181"/>
+</map>

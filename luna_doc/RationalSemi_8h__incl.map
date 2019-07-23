@@ -1,0 +1,8 @@
+<map id="include/Luna/RationalSemi.h" name="include/Luna/RationalSemi.h">
+<area shape="rect" id="node4" href="$Matrix_8h.html" title="A templated matrix class which constructs a Matrix as an std::vector of Vectors. " alt="" coords="664,229,733,256"/>
+<area shape="rect" id="node11" href="$Error_8h.html" title="Defines a class for simple error handling. " alt="" coords="1144,379,1205,405"/>
+<area shape="rect" id="node13" href="$Vector_8h.html" title="A templated numeric Vector class that encapsulates std::vector. " alt="" coords="765,304,835,331"/>
+<area shape="rect" id="node20" href="$Basis_8h.html" title="A base class to be inherited by classes specifying basis functions to be used in spectral methods..." alt="" coords="1012,155,1079,181"/>
+<area shape="rect" id="node21" href="$Special_8h.html" title="A file specifying some special mathematical functions not contained in the standard library..." alt="" coords="369,229,445,256"/>
+<area shape="rect" id="node23" href="$Chebyshev_8h.html" title="A class specifying Chebyshev basis functions to be used in spectral methods. " alt="" coords="837,80,936,107"/>
+</map>
