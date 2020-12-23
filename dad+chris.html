@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.greeting {
+	font-size: 3em;
+	color: #b00927;
+	font-family: cursive, sans-serif;
+	position: fixed;
+	left: 5%;
+}
+.message {
+    position: fixed;
+    top: 45%;
+    left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+	font-size: 4em;
+	color: #b00927;
+	font-family: cursive, sans-serif;
+}
+.signoff {
+	font-size: 3em;
+	color: #b00927;
+	font-family: cursive, sans-serif;
+	text-align: right;
+	position: fixed;
+	top: 78%;
+	right: 20%;
+}
+.sender {
+	font-size: 3em;
+	color: #b00927;
+	font-family: cursive, sans-serif;
+	text-align: right;
+	position: fixed;
+	top: 85%;
+	right: 5%;
+}
+</style>
+</head>
+<body>
+    <script src="https://unpkg.com/magic-snowflakes/dist/snowflakes.min.js"></script>
+    <script>
+        var sf = new Snowflakes({
+            //color: '#f00', // Default: "#5ECDEF"
+            //container: document.querySelector('#snowflakes-container'), // Default: document.body
+            count: 80, // 100 snowflakes. Default: 50
+            minOpacity: 0.1, // From 0 to 1. Default: 0.6
+            maxOpacity: 0.95, // From 0 to 1. Default: 1
+            minSize: 15, // Default: 8
+            maxSize: 40, // Default: 18
+            rotation: true, // Default: true
+            speed: 2, // The property affects the speed of falling. Default: 1
+            //wind: true, // Without wind. Default: true
+            //width: 500, // Default: width of container
+            //height: 250, // Default: height of container
+            //zIndex: 100 // Default: 9999
+        });
+    </script>
+    <p class="greeting">Dear dad & Chris,</p>
+    <h1 class="message">Merry Christmas and a happy new year!</h1>
+    <p class="signoff">Lots of love,</p>
+    <p class="sender">Tony & Rachel</p>
+</body>
+</html>
