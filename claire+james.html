@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Merry Christmas</title>
+
+        <!--Favicon-->
+        <link rel="shortcut icon" href="https://cdn3.iconfinder.com/data/icons/valentine-2065/1024/cupid-512.png">
+    
+        <!--og tag-->
+        <meta property="og:image" content="https://miro.medium.com/max/1300/1*-SQl5SsFPMfiDC-p1kKPhg.jpeg">
+        <meta property="og:title" content="My Christmas Card to You">
+        <meta property="og:description" content="Goodbye 2020, Hello 2021 :)">
+    
+        <!--effect snow-->
+        <script src="https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/xmas/snow.js"></script>
+    
+        <!-- font google-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@600&display=swap" rel="stylesheet">
+    <style>
+        
+        body{
+            background-color: brown
+        }
+        .envelope{
+            background-image: url(' https://pngimg.com/uploads/envelope/envelope_PNG18366.png');
+            background-size: cover;
+            background-position: center;
+            width: 200px;
+            height: 200px;
+            margin: 200px auto 0px auto;
+            cursor: pointer;
+        }
+        .msg1{
+            color: whitesmoke;
+        }
+        *{
+            text-align: center;
+            font-family: 'Titillium Web', sans-serif;
+        }
+        .opened{
+            display: none;
+        }
+        .character{
+            width: 200px;
+            height: 200px;
+            background-image: url('https://contents.sixshop.com/uploadedFiles/56785/blogPost/image_1555494067011.gif');
+            background-size: cover;
+            background-position: center;
+            margin: 100px auto 0px auto;
+            border-radius: 100%;
+            border: 5px solid black;
+            box-shadow: 0px 0px 10px 0px black;
+            cursor: pointer;
+            
+        
+        }
+        .msg2{
+            font-family: 'Titillium Web', sans-serif;
+            width: 400px;
+            height: 410px;
+            text-align: center;
+            margin: 30px auto 0 auto;
+            background-color: bisque;
+            padding: 15px 30px 0px 30px;
+            color: #401D1D;
+            border-radius: 2px;
+            box-shadow: 0px 0px 5px 0px bisque;
+            font-size: 20px;
+            line-height: 30px;
+            
+        }
+        @media screen and (max-width: 760px) {
+    
+            .msg2{
+                width: 220px;
+                height: auto;
+                margin: 20px auto 0 auto;
+                font-size: 13px;
+                line-height: 20px;
+                padding: 15px 20px 13px 20px
+
+            }
+            .character{
+            width: 140px;
+            height: 140px;
+            margin: 45px auto 0px auto;
+            border-radius: 100%;
+            border: 5px solid black;
+            box-shadow: 0px 0px 10px 0px black;
+            }
+            .envelope{
+        
+            margin: 130px auto 0px auto;}
+            
+        }
+
+    </style>
+
+    <script>
+
+        function open_letter() {
+            document.getElementsByClassName("closed")[0].style.display = 'none'
+            document.getElementsByClassName("opened")[0].style.display = 'block'
+        }
+        function ho_ho_ho(){
+            alert("Ho, Ho, Ho!");
+        }
+    </script>
+</head>
+<body>
+    <div class="closed">
+        <div class="envelope" onclick="open_letter()"></div>
+        <h2 class="msg1">▲ OPEN IT ▲</h2>
+        <!--div class="msg1">It's safe to click. I promise. <br>Not contagious - not biologically nor computationally.</div-->
+    </div>
+
+    <div class="opened">
+        <div class="character" onclick="ho_ho_ho()"></div>
+        
+        <h2 style="color: whitesmoke; margin-top: 30px;"> Goodbye 2020, Hello 2021 </h2>
+        
+        <div class="msg2">
+            <p style="text-align: left";>Dear Claire, James, Reuben and Oisín, </p>
+            Merry Christmas and a happy new year!<br>    
+            Let's hope next year will be better than the last.<br>
+            <p style="text-align: right; margin-right: 20px";>Lots of love,<br> Rachel & Tony</p>
+        </div>
+    </div>
+</body>
+</html>

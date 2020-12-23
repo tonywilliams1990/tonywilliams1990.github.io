@@ -1,9 +1,9 @@
 var i = 0;
-var greeting = 'Dear Mom,';
-var title = 'Merry Christmas!';
-var subtitle = 'Looking forward to seeing you soon.';
+var greeting = 'Dear Niamh & Ryan,';
+var title = 'Merry Christmas';
+var subtitle = 'and a happy new year!';
 var signoff = 'Lots of love,';
-var sender = 'Tony \& Rachel';
+var sender = 'Rachel \& Tony';
 var speed = 50;
 
 var length = Math.max( greeting.length, title.length, subtitle.length, signoff.length, sender.length );
